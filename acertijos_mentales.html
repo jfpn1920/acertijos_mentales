@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acertijos mentales</title>
+    <link rel="stylesheet" href="acertijos_mentales.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="acertijos_mentales.js" defer></script>
+</head>
+<body>
+    <!--------------------------------------->
+    <!--|estructuracion_acertijos_mentales|-->
+    <!--------------------------------------->
+    <header class="encabezado">
+        <div class="icono_principal">
+            <i class="fa-solid fa-brain"></i>
+        </div>
+        <div>
+            <span class="etiqueta">DESAFÍO MENTAL</span>
+            <h1>Acertijos Mentales</h1>
+            <p>Pon a prueba tu forma de pensar.</p>
+        </div>
+    </header>
+    <!------------------------------------------>
+    <!--|estructuracion_contenido_de_acertijo|-->
+    <!------------------------------------------>
+    <main class="contenedor">
+        <section class="indicador">
+            <i class="fa-solid fa-puzzle-piece"></i>
+            <span id="numeroAcertijo">Acertijo 1 de 4</span>
+        </section>
+        <!----------------------->
+        <!--|area_del_acertijo|-->
+        <!----------------------->
+        <section class="zona_acertijo">
+            <div class="titulo_acertijo">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h2>Piensa con cuidado</h2>
+            </div>
+            <div class="texto_acertijo">
+                <p id="textoAcertijo">¿Qué tiene agujas y no sabe coser?</p>
+            </div>
+            <div class="separador">
+                <span></span>
+                <i class="fa-solid fa-question"></i>
+                <span></span>
+            </div>
+            <div class="zona_respuesta">
+                <label for="respuestaUsuario"><i class="fa-solid fa-pen"></i>Tu respuesta</label>
+                <input type="text" id="respuestaUsuario" placeholder="Escribe lo que piensas...">
+            </div>
+            <div class="botones">
+                <button id="botonRevelar" class="boton revelar"><i class="fa-solid fa-eye"></i>Revelar respuesta</button>
+                <button id="botonSiguiente" class="boton siguiente"><i class="fa-solid fa-arrow-right"></i>Siguiente acertijo</button>
+            </div>
+            <div id="zonaRespuesta" class="respuesta_oculta">
+                <i class="fa-solid fa-lock"></i>
+                <span>La respuesta está oculta.</span>
+            </div>
+            <p id="mensaje" class="mensaje"></p>
+        </section>
+        <!------------------------------->
+        <!--|informacion_del_ejercicio|-->
+        <!------------------------------->
+        <section class="informacion">
+            <div class="dato">
+                <i class="fa-solid fa-brain"></i>
+                <strong>Pensar</strong>
+                <span>Analiza el acertijo</span>
+            </div>
+            <div class="dato">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <strong>Responder</strong>
+                <span>Escribe tu idea</span>
+            </div>
+            <div class="dato">
+                <i class="fa-solid fa-eye"></i>
+                <strong>Revelar</strong>
+                <span>Comprueba la respuesta</span>
+            </div>
+        </section>
+        <!-------------------------------------->
+        <!--|boton_para_restablecer_acertijos|-->
+        <!-------------------------------------->
+        <section class="zona_restablecer">
+            <button id="botonRestablecer" class="boton restablecer"><i class="fa-solid fa-rotate-left"></i>Restablecer acertijos</button>
+        </section>
+    </main>
+</body>
+</html>

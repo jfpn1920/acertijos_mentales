@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #eef1f7;
+    color: #25283d;
+    min-height: 100vh;
+}
+/*-------------------------------*/
+/*--|estilo_acertijos_mentales|--*/
+/*-------------------------------*/
+.encabezado {
+    background: #25283d;
+    color: white;
+    padding: 35px 8%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icono_principal {
+    width: 70px;
+    height: 70px;
+    background: #f4b942;
+    color: #25283d;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.etiqueta {
+    color: #f4b942;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.encabezado h1 {
+    margin: 5px 0;
+    font-size: 32px;
+}
+.encabezado p {
+    color: #d8dbea;
+}
+/*----------------------------------*/
+/*--|estilo_contenido_de_acertijo|--*/
+/*----------------------------------*/
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+.indicador {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #62677c;
+    font-weight: bold;
+}
+.indicador i {
+    color: #f4b942;
+}
+/*------------------------------*/
+/*--|estilo_area_del_acertijo|--*/
+/*------------------------------*/
+.zona_acertijo {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(37, 40, 61, 0.08);
+}
+.titulo_acertijo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.titulo_acertijo i {
+    color: #f4b942;
+    font-size: 25px;
+}
+.titulo_acertijo h2 {
+    font-size: 24px;
+}
+.texto_acertijo {
+    background: #f4f5f9;
+    border-left: 5px solid #f4b942;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+.texto_acertijo p {
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+.separador {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+.separador span {
+    height: 1px;
+    background: #d9dce6;
+    flex: 1;
+}
+.separador i {
+    color: #f4b942;
+}
+.zona_respuesta label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.zona_respuesta label i {
+    margin-right: 6px;
+    color: #62677c;
+}
+.zona_respuesta input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #dfe2eb;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.zona_respuesta input:focus {
+    border-color: #f4b942;
+}
+.botones {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+.boton {
+    border: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.revelar {
+    background: #25283d;
+    color: white;
+}
+.siguiente {
+    background: #f4b942;
+    color: #25283d;
+}
+.boton:hover {
+    transform: translateY(-2px);
+}
+.respuesta_oculta {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f5f6fa;
+    border-radius: 12px;
+    text-align: center;
+    color: #62677c;
+}
+.respuesta_visible {
+    background: #e9f7ef;
+    color: #237a4b;
+    border: 1px solid #b9e2ca;
+}
+.respuesta_visible strong {
+    display: block;
+    margin-top: 8px;
+    font-size: 20px;
+}
+.mensaje {
+    text-align: center;
+    margin-top: 15px;
+    min-height: 20px;
+    color: #62677c;
+}
+/*--------------------------------------*/
+/*--|estilo_informacion_del_ejercicio|--*/
+/*--------------------------------------*/
+.informacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+.dato {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.dato i {
+    color: #f4b942;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.dato strong {
+    display: block;
+    margin-bottom: 5px;
+}
+.dato span {
+    font-size: 13px;
+    color: #777b8d;
+}
+/*---------------------------------------------*/
+/*--|estilo_boton_para_restablecer_acertijos|--*/
+/*---------------------------------------------*/
+.zona_restablecer {
+    text-align: center;
+    margin-top: 25px;
+}
+.restablecer {
+    margin: auto;
+    background: #dfe2eb;
+    color: #25283d;
+}
